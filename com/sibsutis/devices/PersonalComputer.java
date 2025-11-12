@@ -19,7 +19,7 @@ public class PersonalComputer {
     }
     @Override 
     public boolean equals(Object obj) { 
-        if (this == obj) return true; 
+        if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         PersonalComputer pc = (PersonalComputer) obj;
         return id == pc.id && 
@@ -27,7 +27,7 @@ public class PersonalComputer {
                java.util.Objects.equals(ip, pc.ip);
     }
     @Override
-    public int hashCode() { 
+    public int hashCode() {
         return java.util.Objects.hash(id, price, ip);
     }
 }

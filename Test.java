@@ -12,17 +12,17 @@ public class Test {
         
         System.out.println("Первый: " + cache.getFirst());
         System.out.println("Последний: " + cache.getLast());
-        System.out.println("Есть 2: " + cache.exists(2));
-        System.out.println("Элемент 1: " + cache.getItemByIndex(1));
+        System.out.println("Есть 2: " + cache.exists(1));
+        System.out.println("Элемент 1: " + cache.getItemByIndex(0)); 
         
         cache.add(4);
         System.out.println("\nДобавил 4");
         System.out.println("Первый: " + cache.getFirst());
-        System.out.println("Есть 1: " + cache.exists(1));
+        System.out.println("Есть 1: " + cache.exists(0)); 
         
         cache.remove(2); 
         System.out.println("\nудалил 2"); 
-        System.out.println("Есть 2: " + cache.exists(2)); 
+        System.out.println("Есть 2: " + cache.exists(1)); 
 
         Cache<String> stringCache = new Cache<>(2);
         stringCache.add("Hello");
